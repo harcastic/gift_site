@@ -10,7 +10,7 @@ body {
 }
 
 .background {
-  background-image: url('/gift_site/assets/login-bg.jpg'); /* Make sure this path is correct */
+  background-image: url('/assets/login-bg.jpg'); /* Make sure this path is correct */
   height: 100vh;
   display: flex;
   justify-content: center;
