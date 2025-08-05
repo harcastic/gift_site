@@ -105,3 +105,43 @@ body {
 .search-bar-container.active {
   display: block;
 }
+
+/* sliding images */
+
+.web-wrapper{
+  position: relative;
+  width: 100%;
+  padding:0 72px 0 72px;
+}
+
+.slide-confined{
+  margin: 30px 17px 10px;
+}
+
+.order{
+  display: flex;
+  overflow-x: auto;
+  padding: 20px;
+  gap: 35px;
+  scrollbar-width: none;
+}
+
+.order::-webkit-scrollbar {
+  display: none;
+}
+.order-img{
+  flex: 0 0 auto;
+  text-align: center;
+}
+.order-img img{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+.order-img p{
+  margin-top:14px;
+  font-size: 14px;
+  color: #333;
+}
