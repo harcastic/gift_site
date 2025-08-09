@@ -109,11 +109,65 @@ body {
 /* shortcut suggestions */
 
 .shortcuts{
-  display:flex;
-  width: 100%;
-  line-height:30px;
-  border: 1px solid rgb(222, 216, 216);
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px 10px 20px;
+  border-bottom: 1px solid rgb(222, 216, 216);
+  border-top: 1px solid rgb(222, 216, 216);
 }
+
+.list-items{
+  display: flex;
+  gap:30px;
+  list-style: none;
+}
+
+.navitems{
+  position: relative;
+}
+
+.navitems a{
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  padding: 5px;
+}
+.navitems a:hover{
+  color: cadetblue;
+}
+#navitems-arrow {
+  transition: transform 0.5s ease; /* Smooth animation */
+}
+.navitems:hover #navitems-arrow {
+  transform: rotate(180deg);
+  color:cadetblue
+}
+.navitems .dropdown-list{
+  position: absolute;
+  top: 39px;
+  left: 0;
+  background: white;
+  border: 1px solid #ddd;
+  min-width: 160px;
+  display: none;
+  flex-direction: column;
+  box-shadow: 0px 3px 8px rgba(0,0,0,0.1);
+  z-index: 100;
+  overflow-x:inherit;
+}
+.navitems .dropdown-list .drop-items{
+  padding: 10px;
+  list-style: none;
+}
+
+.navitems:hover .dropdown-list {
+  display: block;
+}
+
+
 
 
 /* sliding images */
