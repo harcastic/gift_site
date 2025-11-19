@@ -5,142 +5,175 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bouquees - Flowers for all</title>
     <link rel="stylesheet" href="home.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
-    <div class="header">
-        <span>Bouquees</span>
-        <div class="nav">
-            <div class="nav-options"><a href="#">HOME</a></div>
-            <div class="nav-options"><a href="#">PAGES</a></div>
-            <div class="nav-options"><a href="#">SHOP</a></div>
-            <div class="nav-options"><a href="#">BLOGS</a></div>
-            <div class="nav-options"><a href="#">FEEDBACKS</a></div>
-            <div class="nav-options"><a href="#">CONTACT US</a></div>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <button class="hamburger" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="logo-container">
+            <span class="logo">Bouquees</span>
         </div>
-
-        <div class="carts">
-            <div class="search-wrapper">
-                <div class="search-bar-container" id="search-bar">
-                    <input type="text" placeholder="Search..." />
-                </div>
-                <div class="navig"><img src="./assets/icons8-search-48.png" id="search-icon"></div>
+        <div class="delivery-location">
+            <span>Where to deliver?</span>
+            <div class="location-selector">
+                <img src="./assets/india-flag.png" alt="India Flag" class="flag-icon">
+                <span class="location-text">Location missing</span>
+                <i class="fa-solid fa-chevron-down"></i>
             </div>
-            <div class="navig"><img src="./assets/icons8-account-48.png"></div>
-            <div class="navig"><img src="./assets/icons8-heart-50.png"></div>
-            <div class="navig"><img src="./assets/icons8-bag-48.png"></div> 
-            <div class="profile"><p class="user-name"></p>Krishana</div> 
+        </div>
+        <div class="search-container">
+            <input type="text" placeholder="Free delivery within 2 hrs for Fresh flowers in Delhi & Bangalore...">
+            <button type="button" class="search-btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+        <div class="top-actions">
+            <a href="#" class="action-item">
+                <i class="fa-regular fa-clock"></i>
+                <span>Same Day</span>
+            </a>
+            <a href="#" class="action-item">
+                <i class="fa-solid fa-indian-rupee-sign"></i>
+                <span>INR</span>
+            </a>
+            <a href="#" class="action-item">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>Cart</span>
+            </a>
+            <a href="#" class="action-item">
+                <i class="fa-regular fa-user"></i>
+                <span>Hi Guest</span>
+            </a>
+            <a href="#" class="action-item">
+                <i class="fa-solid fa-ellipsis"></i>
+                <span>More</span>
+            </a>
         </div>
     </div>
 
-    <!-- shortcut suggestions -->
-     <nav class="shortcuts">
-        <ul class="list-items">
-            <li class="navitems"><a href="#" >Arrivals
-                <i class="fa-solid fa-angle-down "id="navitems-arrow"></i>
-            </a>
-            <ul class="dropdown-list">
-                <li class="drop-items"><a href="#">New Arrivals</a></li>
-                <li class="drop-items"><a href="#">New Arrivals</a></li>
-                <li class="drop-items"><a href="#">New Arrivals</a></li>
-            </ul>
+    <!-- Main Navigation -->
+    <nav class="main-nav">
+        <ul class="nav-categories">
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    Birthday
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
             </li>
-
-            <li class="navitems"><a href="#">Date
-                <i class="fa-solid fa-angle-down "id="navitems-arrow"></i>
-            </a>
-            <ul class="dropdown-list">
-                <li class="drop-items"><a href="#">Today</a></li>
-                <li class="drop-items"><a href="#">Tomorrow</a></li>
-                <li class="drop-items"><a href="#">Next Week</a></li>
-            </ul>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    Occasions
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
             </li>
-            <li class="navitems"><a href="#">Flowers
-                <i class="fa-solid fa-angle-down "id="navitems-arrow"></i>
-            </a>
-            <ul class="dropdown-list">
-                <li class="drop-items"><a href="#">Roses</a></li>
-                <li class="drop-items"><a href="#">Tulips</a></li>
-                <li class="drop-items"><a href="#">Lilies</a></li>
-            </ul>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    Anniversary
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
             </li>
-            <li class="navitems"><a href="#">Occasional
-                <i class="fa-solid fa-angle-down "id="navitems-arrow"></i>
-            </a>
-            <ul class="dropdown-list">
-                <li class="drop-items"><a href="#">Weddings</a></li>
-                <li class="drop-items"><a href="#">Birthdays</a></li>
-                <li class="drop-items"><a href="#">Anniversaries</a></li>
-            </ul>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    Flowers
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
             </li>
-
-            <li class="navitems"><a href="#">Best Sellers
-                <i class="fa-solid fa-angle-down "id="navitems-arrow"></i>
-            </a>
-            <ul class="dropdown-list">
-                <li class="drop-items"><a href="#">Top 10</a></li>
-                <li class="drop-items"><a href="#">Trending</a></li>
-                <li class="drop-items"><a href="#">Customer Favorites</a></li>
-            </ul>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    Cakes
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
             </li>
-            <li class="navitems"><a href="#">Best Sellers
-                <i class="fa-solid fa-angle-down "id="navitems-arrow"></i>
-            </a>
-            <ul class="dropdown-list">
-                <li class="drop-items"><a href="#">Top 10</a></li>
-                <li class="drop-items"><a href="#">Trending</a></li>
-                <li class="drop-items"><a href="#">Customer Favorites</a></li>
-            </ul>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    Personalised
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
             </li>
-            <li class="navitems"><a href="#">Best Sellers
-                <i class="fa-solid fa-angle-down "id="navitems-arrow"></i>
-            </a>
-            <ul class="dropdown-list">
-                <li class="drop-items"><a href="#">Top 10</a></li>
-                <li class="drop-items"><a href="#">Trending</a></li>
-                <li class="drop-items"><a href="#">Customer Favorites</a></li>
-            </ul>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    Plants
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
             </li>
-            <li class="navitems"><a href="#">Best Sellers
-                <i class="fa-solid fa-angle-down "id="navitems-arrow"></i>
-            </a>
-            <ul class="dropdown-list">
-                <li class="drop-items"><a href="#">Top 10</a></li>
-                <li class="drop-items"><a href="#">Trending</a></li>
-                <li class="drop-items"><a href="#">Customer Favorites</a></li>
-            </ul>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    Chocolates
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
             </li>
-            <li class="navitems"><a href="#">Best Sellers
-                <i class="fa-solid fa-angle-down "id="navitems-arrow"></i>
-            </a>
-            <ul class="dropdown-list">
-                <li class="drop-items"><a href="#">Top 10</a></li>
-                <li class="drop-items"><a href="#">Trending</a></li>
-                <li class="drop-items"><a href="#">Customer Favorites</a></li>
-            </ul>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    Luxe
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
             </li>
-            <li class="navitems"><a href="#">Best Sellers
-                <i class="fa-solid fa-angle-down "id="navitems-arrow"></i>
-            </a>
-            <ul class="dropdown-list">
-                <li class="drop-items"><a href="#">Top 10</a></li>
-                <li class="drop-items"><a href="#">Trending</a></li>
-                <li class="drop-items"><a href="#">Customer Favorites</a></li>
-            </ul>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    Hampers
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
             </li>
-
-            <li class="navitems"><a href="#">Best Sellers
-                <i class="fa-solid fa-angle-down "id="navitems-arrow"></i>
-            </a>
-            <ul class="dropdown-list">
-                <li class="drop-items"><a href="#">Top 10</a></li>
-                <li class="drop-items"><a href="#">Trending</a></li>
-                <li class="drop-items"><a href="#">Customer Favorites</a></li>
-            </ul>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    Lifestyle
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
             </li>
-            
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    On Trend
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+            </li>
         </ul>
-     </nav>
+    </nav>
+
+
+    <!-- Hero Slider Section -->
+    <div class="redirect-content">
+        <div class="redirect-wrapper">
+            <ul class="redirect-list">
+                <div class="redirect-item">
+                    <a href="#"><img src="./assets/bouques/download (1).jpeg" alt="Shop All"></a>
+                </div>
+                <div class="redirect-item">
+                    <a href="#"><img src="./assets/bouques/download (2).jpeg" alt="New Arrivals"></a>
+                </div>
+                <div class="redirect-item">
+                    <a href="#"><img src="./assets/bouques/download (3).jpeg" alt="Best Sellers"></a>
+                </div>
+                <div class="redirect-item">
+                    <a href="#"><img src="./assets/bouques/download (2).jpeg" alt="Special Offers"></a>
+                </div>
+                <div class="redirect-item">
+                    <a href="#"><img src="./assets/bouques/download (3).jpeg" alt="Wedding Collection"></a>
+                </div>
+                <div class="redirect-item">
+                    <a href="#"><img src="./assets/bouques/download (1).jpeg" alt="Birthday Special"></a>
+                </div>
+                <div class="redirect-item">
+                    <a href="#"><img src="./assets/bouques/download (3).jpeg" alt="Anniversary Collection"></a>
+                </div>
+            </ul>
+            <div class="redirect-controls">
+                <button class="redirect-btn prev-btn">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <button class="redirect-btn next-btn">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+            <div class="redirect-dots"></div>
+        </div>
+    </div>
+
+
 
 
     <!-- scrolling suggestions -->
@@ -169,6 +202,189 @@
             </div>
         </div>
     </div>
+
+    <!-- Featured Categories Section -->
+    <section class="categories-section">
+        <h2 class="section-title">Shop by Category</h2>
+        <p class="section-subtitle">Find the perfect flowers for every occasion</p>
+        <div class="categories-grid">
+            <div class="category-card">
+                <img src="./assets/bouques/download (1).jpeg" alt="Wedding Flowers">
+                <h3>Wedding Collection</h3>
+                <a href="#" class="category-btn">Shop Now</a>
+            </div>
+            <div class="category-card">
+                <img src="./assets/bouques/download (2).jpeg" alt="Birthday Flowers">
+                <h3>Birthday Specials</h3>
+                <a href="#" class="category-btn">Shop Now</a>
+            </div>
+            <div class="category-card">
+                <img src="./assets/bouques/download (3).jpeg" alt="Anniversary Flowers">
+                <h3>Anniversary Gifts</h3>
+                <a href="#" class="category-btn">Shop Now</a>
+            </div>
+            <div class="category-card">
+                <img src="./assets/bouques/download (1).jpeg" alt="Sympathy Flowers">
+                <h3>Sympathy & Comfort</h3>
+                <a href="#" class="category-btn">Shop Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offers Section -->
+    <section class="offers-section">
+        <div class="offers-container">
+            <div class="offer-card">
+                <div class="offer-content">
+                    <h2>Same Day Delivery</h2>
+                    <p>Order by 2 PM for delivery today</p>
+                    <a href="#" class="offer-btn">Order Now</a>
+                </div>
+                <img src="./assets/bouques/download (2).jpeg" alt="Same Day Delivery">
+            </div>
+            <div class="offer-card">
+                <div class="offer-content">
+                    <h2>Wedding Special</h2>
+                    <p>20% off on wedding collections</p>
+                    <a href="#" class="offer-btn">View Collection</a>
+                </div>
+                <img src="./assets/bouques/download (3).jpeg" alt="Wedding Special">
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="features-section">
+        <h2 class="section-title">Why Choose Bouquees?</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fa-solid fa-truck-fast"></i>
+                <h3>Fast Delivery</h3>
+                <p>Same day delivery available</p>
+            </div>
+            <div class="feature-card">
+                <i class="fa-solid fa-flower"></i>
+                <h3>Fresh Flowers</h3>
+                <p>Guaranteed fresh for 7 days</p>
+            </div>
+            <div class="feature-card">
+                <i class="fa-solid fa-headset"></i>
+                <h3>24/7 Support</h3>
+                <p>Always here to help you</p>
+            </div>
+            <div class="feature-card">
+                <i class="fa-solid fa-shield-heart"></i>
+                <h3>Secure Payment</h3>
+                <p>100% secure transactions</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <h2 class="section-title">What Our Customers Say</h2>
+        <div class="testimonials-container">
+            <div class="testimonial-card">
+                <div class="testimonial-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p>"Beautiful flowers and excellent service! The bouquet was exactly as pictured."</p>
+                <div class="testimonial-author">
+                    <h4>Sarah Johnson</h4>
+                    <span>Regular Customer</span>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p>"Timely delivery and the flowers were fresh. Will definitely order again!"</p>
+                <div class="testimonial-author">
+                    <h4>Michael Brown</h4>
+                    <span>Verified Buyer</span>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p>"The wedding bouquets were stunning! Exceeded our expectations."</p>
+                <div class="testimonial-author">
+                    <h4>Emily Davis</h4>
+                    <span>Wedding Customer</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="newsletter-container">
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Get updates on new arrivals and special offers</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email address">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Bouquees</h3>
+                <p>We deliver happiness through beautiful flower arrangements for all occasions.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <ul class="contact-info">
+                    <li><i class="fa-solid fa-location-dot"></i> 123 Flower Street, Garden City</li>
+                    <li><i class="fa-solid fa-phone"></i> +1 234 567 8900</li>
+                    <li><i class="fa-solid fa-envelope"></i> info@bouquees.com</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Working Hours</h3>
+                <ul class="working-hours">
+                    <li>Monday - Friday: 9:00 AM - 8:00 PM</li>
+                    <li>Saturday: 9:00 AM - 6:00 PM</li>
+                    <li>Sunday: 10:00 AM - 4:00 PM</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Bouquees. All rights reserved.</p>
+        </div>
+    </footer>
 
     <script src="home.js"></script>
 </body>
